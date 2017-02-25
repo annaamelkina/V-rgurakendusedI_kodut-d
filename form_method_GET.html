@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Form method GET</title>
+		
+	</head>
+	<body>
+		<form method="get" action="form_method_GET.html">
+		
+		<table border="1">
+			<caption>Isiku registreerimise vorm</caption>
+			
+			<tr>
+				<th>
+					Kasutaja nimi:
+				</th>
+				<td>
+					<input type="text" name="kasutaja" placeholder="Nimi ja Perekonnanimi" size="20">
+				</td>
+			</tr>
+			<tr>
+				<th>
+					Sugu:
+				</th>
+				<td>
+					<input type="radio" name="sugu" value="male" checked>Mees<br>
+   					<input type="radio" name="sugu" value="female">Naine<br>
+   					<input type="radio" name="sugu" value="other">Muu
+				</td>
+			</tr>
+				<th>
+					Keeleoskused:
+				</th>
+				<td>
+					<input type="checkbox" name="option1" value="a1" checked>Eesti keel<Br>
+   					<input type="checkbox" name="option2" value="a2">Inglise keel<Br>
+   					<input type="checkbox" name="option3" value="a3">Vene keel<Br> 
+   					<input type="checkbox" name="option4" value="a4">Soome keel<Br> 
+   					<input type="checkbox" name="option5" value="a5">Saksa keel
+
+				</td>
+			<tr>
+				<th>
+					Sьnniaeg:
+				</th>
+				<td>
+					<input type="date" name="bday">
+				</td>
+			</tr>
+			<tr>
+				<th>
+					E-post:
+				</th>
+				<td>
+					<input type="email" name="epost">
+				</td>
+			</tr>
+			<tr>
+				<th>
+					Mдrkused:
+				</th>
+				<td>
+					<textarea rows="10" cols="21" name="text"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					Soovitud kasutajanimi:
+				</th>
+				<td>
+					<input type="text" name="username" placeholder="Kasutajanimi" size="20">
+				</td>
+			</tr>
+			
+			<tr>
+				<th>
+					Parool:
+				</th>
+				<td>
+					<input type="password" name="password" placeholder="Parool" size="20">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button type="submit">Registreeri</button>	
+				</td>
+			</tr>
+			
+		</table>
+		
+	</body>
+</html>
