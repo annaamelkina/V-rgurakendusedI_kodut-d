@@ -3,12 +3,22 @@
 	<head>
 		<title>Sisselogimise vorm</title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="vorm.css">
 	</head>
-	<body>
 	
+	<body>
+		<div class="menyykast">
+		<ul class="menyy">
+			<li class="valitud"><a href="sisselogimine.html">Sisselogimine</a></li>
+			<li><a href="registreerimine.html">Registreerimine</a></li>
+			<li><a href="http://google.com">Google</a></li>
+		</ul>
+		<div class="clear"></div>
+		</div>
+		
 		<form method="post" action="vorm.php">
 	
-		<table border="1">
+		<table class="tabel">
 			<caption>Sisselogimimise vorm</caption>
 			
 			<tr>
@@ -16,7 +26,7 @@
 					<label for="username-id">Kasutajanimi:</label>
 				</th>
 				<td>
-					<input type="text" name="username" id="username-id" placeholder="Kasutajanimi" size="20">
+					<input type="text" name="username" id="username-id" placeholder="Kirjuta siia kasutajanimi">
 				</td>
 			</tr>
 			
@@ -25,7 +35,7 @@
 					<label for="password-id">Parool:</label>
 				</th>
 				<td>
-					<input type="password" name="password" id="password-id" placeholder="Parool" size="20">
+					<input type="password" name="password" id="password-id" placeholder="Sisesta siia parool">
 				</td>
 			</tr>
 			
