@@ -1,18 +1,36 @@
+body {
+	font-family: Arial, Sans Serif;
+}
+
 .menyykast {
-	padding: 10px 0;
+	/*padding: 10px 0;*/
+	margin-bottom: 10px;
+}
+
+@media (min-width: 700px) {
+	.menyy {
+		flex-direction: row;
+	}		
+}
+
+@media (max-width: 700px) {
+	.menyy {
+		flex-direction: column;
+	}
 }
 
 .menyy {
 	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
+	display: flex;
 }
 
 .menyy li{
 	width: 7em;
 	padding: 5px;
-	float: left;
-	background: #EEEEEE
+	background-color: #EEEEEE;
+
 }
 
 .menyy .valitud {
@@ -66,4 +84,12 @@ input [type="tekst"] {
 
 input [type="password"] {
 	
+}
+
+div.autor {
+	border: 1px solid red;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	background: white;
 }
